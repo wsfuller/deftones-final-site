@@ -1,0 +1,596 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Mina', sans-serif;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+.secondary-font{
+  font-family: 'Rozha One', serif;
+}
+
+.container{
+  position: relative;
+  margin: auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(33, 33, 33, 0.5);
+  -webkit-box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 35px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.75);
+  z-index: 10;
+}
+
+.logo {
+  max-height: 45px;
+  float: left;
+  padding: 5px 0;
+  font-family: 'Rozha One', serif;
+}
+
+.logo > a {
+  display: inline-block;
+  height: 100%;
+  line-height: 45px;
+  color: #fff;
+  font-size: 24px;
+}
+
+nav{
+  width: 100%;
+  height: auto;
+  display: none;
+  position: relative;
+  z-index: 10;
+  background-color: rgba(33, 33, 33, 0.5);
+}
+
+nav > a {
+  width: 100%;
+  height: 40px;
+  float: left;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.mobile-menu-icon {
+  width: 36px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  padding: 15px 10px;
+  z-index: 10;
+}
+
+.mobile-menu-icon > div {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+
+.mobile-menu-icon:hover {
+  cursor: pointer;
+  background-color: rgba(33, 33, 33, 0.75);
+}
+
+@media (min-width: 736px) {
+  nav{
+    height: 45px;
+    font-size: 0;
+    display: flex !important;
+    justify-content: flex-end;
+    background-color: transparent;
+  }
+  nav > a {
+    width: auto;
+    height: 100%;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 45px;
+    transition: all .25s ease-in-out;
+  }
+  .mobile-menu-icon {
+    display: none;
+  }
+}
+
+nav > a:hover, nav > a.active{
+  background-color: rgba(0,0,0, 0.75);
+}
+
+section{
+  width: 100%;
+  height: auto;
+  margin: 25px auto;
+}
+
+.section-title{
+  margin-bottom: 15px;
+}
+
+.image-responsive{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.page-banner{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.page-banner:after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0,0,0, 0.75);
+}
+
+@media (min-width: 1960px){
+  .page-banner{
+    height: 600px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1959px){
+  .page-banner{
+    height: 450px;
+  }
+}
+
+.page-banner > .banner-title {
+  color: #fff;
+  font-size: 32px;
+  text-shadow: 2px 0px 15px #666;
+  opacity: .5;
+  z-index: 1;
+}
+
+@media (min-width: 720px){
+  .page-banner > .banner-title {
+    font-size: 60px;
+  }
+}
+
+/*
+
+   ABOUT
+
+ */
+
+.about-banner{
+  background: url('../images/about/banner.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.history-image{
+  max-width: 250px;
+  float: left;
+  padding-right: 10px;
+}
+
+/*
+
+   TOUR DATES
+
+ */
+
+.tour-dates-banner{
+  background: url('../images/tour-dates/banner.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*
+
+   HOME
+
+ */
+
+.video-container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.video-overlay{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.video-overlay:before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background: #000000;
+  opacity: .75;
+}
+
+.home-logo {
+  z-index: 2;
+  position: absolute;
+  text-shadow: 2px 0px 15px #666;
+  transition: all .5s ease-in-out;
+}
+
+@media (min-width: 720px){
+  .home-logo{
+    width: 30vw;
+    height: 30vh;
+  }
+}
+
+@keyframes faderAnimation {
+  0%   { opacity:.85; }
+  50%  { opacity:.25; }
+  100% { opacity:.95; }
+}
+@-moz-keyframes faderAnimation{
+  0%   { opacity:.85; }
+  50%  { opacity:.25; }
+  100% { opacity:.95; }
+}
+@-webkit-keyframes faderAnimation{
+  0%   { opacity:.85; }
+  50%  { opacity:.25; }
+  100% { opacity:.95; }
+}
+.animate-fader {
+   -webkit-animation: faderAnimation 5s infinite;
+   -moz-animation: faderAnimation 5s infinite;
+   -o-animation: faderAnimation 5s infinite;
+    animation: faderAnimation 5s infinite;
+}
+
+/*
+
+   DISCOGRAPHY
+
+ */
+
+.discography-banner {
+  background: url('../images/discography/banner.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.album{
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1024px) {
+  .album {
+    text-align: left;
+  }
+}
+
+.album-cover{
+  max-width: 275px;
+  max-height: 275px;
+  border-radius: 8px;
+  box-shadow: 0 45px 100px rgba(0, 0, 0, 0.4);
+  transition: all .3s ease-in-out;
+}
+
+@media (min-width: 1024px){
+  .album-cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.album-cover:hover{
+  max-width: 300px;
+  max-height: 300px;
+  box-shadow: 0 75px 175px rgba(0, 0, 0, 0.4);
+}
+
+ul.album-details{
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 1024px){
+  ul.album-details {
+    margin-left: 320px;
+  }
+}
+
+.album-title{
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+ul.track-listings{
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+ul.track-listings > li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+span.track-number {
+  margin-right: 10px;
+}
+
+ul-track-listings > li > .track-time {
+  text-align: right;
+}
+
+/*
+
+   MEDIA
+
+ */
+
+.media-banner {
+  background: url('../images/media/banner.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.media-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.media-card-wrapper {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.media-card{
+  width: 225px;
+  height: 225px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 0;
+  transition: all .3s ease-in-out;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.media-card > img {
+  width: 100%;
+  height: 100%;
+}
+
+.media-card:hover {
+  width: 250px;
+  height: 250px;
+  z-index: 10;
+  box-shadow: 0 50px 125px rgba(0, 0, 0, 0.4);
+}
+
+.media-list > iframe {
+  margin-bottom: 50px;
+}
+
+/*
+
+   MERCH
+
+ */
+
+.merch-banner {
+  background: url('../images/merch/banner.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+ul.merch-controls {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #efefef;
+}
+
+@media (min-width: 736px){
+  ul.merch-controls {
+    flex-wrap: nowrap;
+  }
+}
+
+ul.merch-controls > li {
+  width: 100%;
+  height: auto;
+  flex-grow: 0;
+  overflow: hidden;
+}
+
+.merch-ctrl-btn {
+	height: 4rem;
+  flex-grow: 0;
+	width: 100%;
+	line-height: 24px;
+	font-size: 16px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: none;
+	overflow: hidden;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.merch-ctrl-btn.active {
+  background: #efefef;
+}
+
+.merch-ctrl-btn:hover {
+  cursor: pointer;
+  background: #efefef;
+}
+
+.merch-ctrl-btn span {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+  position: relative;
+	-webkit-transition: all 0.3s;
+	-webkit-backface-visibility: hidden;
+	-moz-transition: all 0.3s;
+	-moz-backface-visibility: hidden;
+	transition: all 0.3s;
+	backface-visibility: hidden;
+}
+
+.merch-ctrl-btn img {
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.merch-ctrl-btn:hover span {
+	-webkit-transform: translateY(300%);
+	-moz-transform: translateY(300%);
+	-ms-transform: translateY(300%);
+	transform: translateY(300%);
+}
+
+.merch-ctrl-btn:hover img {
+  bottom: 15%;
+}
+
+.filtr-item {
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  z-index:0;
+  transition: all .3s ease-in-out;
+}
+
+.filtr-item > img {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.filtr-item:hover {
+  cursor: pointer;
+  top: .5rem;
+  background: #efefef;
+  z-index:10;
+}
+
+.filtr-item:hover > img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition: all .3s ease-in-out;
+}
+
+.filtr-item.--sold-out:before {
+  content: "Sold Out";
+  width: 20rem;
+  height: 2rem;
+  position: absolute;
+  top: 1.5625rem;
+  right: -105px;
+  padding-top: .25rem;
+  color: #fff;
+  text-align: center;
+  transform: translate(-50%, -25px);
+  z-index: 1;
+  background: rgba(117,0,2, 0.85);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+  transform: rotate(35deg)
+}
+
+.filtr-item.--sold-out:hover{
+  cursor: not-allowed;
+}
+
+button:focus {
+  outline: 0;
+}

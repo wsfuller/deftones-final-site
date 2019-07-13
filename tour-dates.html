@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Final Project for HTML5/CSS3 Course">
+  <meta name="keywords" content="HTML,CSS,JavaScript,jQuery">
+  <meta name="author" content="William S Fuller">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deftones</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/normalize.css" />
+  <link href="https://fonts.googleapis.com/css?family=Mina|Rozha+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/flexboxgrid.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <a href="index.html"><img class="logo" src="./assets/images/deftones-logo.svg" alt="Deftones text logo" /></a>
+          <div id="MenuIcon" class="mobile-menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <nav id="MainMenu" class="col-xs-12 col-sm-8">
+          <a href="about.html">About</a>
+          <a href="discography.html">Discography</a>
+          <a href="media.html">Media</a>
+          <a href="merch.html">Merch</a>
+          <a class="active" href="tour-dates.html">Tour Dates</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="page-banner tour-dates-banner">
+      <h1 class="secondary-font banner-title">Deftones Live</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Tour Dates</h1>
+        </div>
+        <div class="col-xs-12" style="overflow-x:auto;">
+          <table style="width: 100%; min-width: 1000px">
+            <tr>
+              <th>Venue</th>
+              <th>Location</th>
+              <th>With</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>WTB</th>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.facebook.com/pg/chamorrocityhall/about/?ref=page_internal" target="_blank">Chamorro Entertainment City Hall</a>
+              </td>
+              <td>Bogota, Colombia</td>
+              <td>Slipknot & KoRn</td>
+              <td>5-24-18</td>
+              <td>Doors @ 7:30pm</td>
+              <td><a href="https://www.stubhub.com/deftones-tickets" target="_blank">Stub Hub</a></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://www.teatrocoliseo.org.ar/" target="_blank">Teatro Coliseo</a>
+              </td>
+              <td>Region Metropolitana, CL</td>
+              <td>Slipknot & KoRn</td>
+              <td>5-28-18</td>
+              <td>Doors @ 9:30pm</td>
+              <td><a href="https://www.stubhub.com/deftones-tickets" target="_blank">Stub Hub</a></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.lunapark.com.ar/" target="_blank">Stadium Luna Park</a>
+              </td>
+              <td>Buenos Aires, AR</td>
+              <td>Linkin Park & Mudvayne</td>
+              <td>5-30-18</td>
+              <td>Doors @ 6:45pm</td>
+              <td><a href="https://www.stubhub.com/deftones-tickets" target="_blank">Stub Hub</a></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://arenaoakland.com/oracle/index.php" target="_blank">Oracle Arena</a>
+              </td>
+              <td>Oakland, CA</td>
+              <td>Limp Bizkit, Linkin Park & Mudvayne</td>
+              <td>7-30-18</td>
+              <td>Doors @ 7:45pm</td>
+              <td><a href="https://www.stubhub.com/deftones-tickets" target="_blank">Stub Hub</a></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="http://centersanjose.com/sap/index.php" target="_blank">SAP Center at San Jose</a>
+              </td>
+              <td>San Jose, CA</td>
+              <td>Limp Bizkit, Linkin Park & Mudvayne</td>
+              <td>8-1-18</td>
+              <td>Doors @ 7:45pm</td>
+              <td><a href="https://www.stubhub.com/deftones-tickets" target="_blank">Stub Hub</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="./assets/javascripts/jquery-3.3.1.min.js"></script>
+<script src="./assets/javascripts/lodash.js"></script>
+<script src="./assets/javascripts/mobile-menu.js"></script>
+</html>

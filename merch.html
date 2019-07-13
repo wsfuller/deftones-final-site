@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Final Project for HTML5/CSS3 Course">
+  <meta name="keywords" content="HTML,CSS,JavaScript,jQuery">
+  <meta name="author" content="William S Fuller">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deftones</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/normalize.css" />
+  <link href="https://fonts.googleapis.com/css?family=Mina|Rozha+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/flexboxgrid.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css" />
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <a href="index.html"><img class="logo" src="./assets/images/deftones-logo.svg" alt="Deftones text logo" /></a>
+          <div id="MenuIcon" class="mobile-menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <nav id="MainMenu" class="col-xs-12 col-sm-8">
+          <a href="about.html">About</a>
+          <a href="discography.html">Discography</a>
+          <a href="media.html">Media</a>
+          <a class="active" href="merch.html">Merch</a>
+          <a href="tour-dates.html">Tour Dates</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="page-banner merch-banner">
+      <h1 class="secondary-font banner-title">Merch Store</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="merch-controls">
+            <li data-filter="all">
+              <button class="merch-ctrl-btn active all-icon">All items</button>
+            </li>
+            <li data-filter="topwear">
+              <button class="merch-ctrl-btn">
+                <span>Topwear</span>
+                <img src="./assets/images/merch/icons/topwear-icon.svg" />
+              </button>
+            </li>
+            <li data-filter="bottomwear">
+              <button class="merch-ctrl-btn bottomwear-icon">
+                <span>Bottomwear</span>
+                <img src="./assets/images/merch/icons/bottomwear-icon.svg" />
+              </button>
+            </li>
+            <li data-filter="headwear">
+              <button class="merch-ctrl-btn headwear-icon">
+                <span>Headwear</span>
+                <img src="./assets/images/merch/icons/headwear-icon.svg" />
+              </button>
+            </li>
+            <li data-filter="footwear">
+              <button class="merch-ctrl-btn footwear-icon">
+                <span>Footwear</span>
+                <img src="./assets/images/merch/icons/footwear-icon.svg" />
+              </button>
+            </li>
+            <li data-filter="accessories">
+              <button class="merch-ctrl-btn accessories-icon">
+                <span>Accessories</span>
+                <img src="./assets/images/merch/icons/accessories-icon.svg" />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="filtr-container row">
+        <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="topwear" data-sort="value">
+          <img
+            class="image-responsive"
+            src="./assets/images/merch/topwear/white-pony-red-shirt.png"
+            alt="Red T-Shirt with white horse logo"
+          />
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="headwear" data-sort="value">
+          <img
+            class="image-responsive"
+            src="./assets/images/merch/headwear/deftones-beanie.png"
+            alt="Black Deftones beanie with pom"
+          />
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="footwear" data-sort="value">
+          <img
+            class="image-responsive"
+            src="./assets/images/merch/footwear/deftones-flip-flops.png"
+            alt="Red Deftones flip flops"
+          />
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="bottomwear" data-sort="value">
+          <img
+            class="image-responsive"
+            src="./assets/images/merch/bottomwear/deftones-shorts.png"
+            alt="Black womens shorts with white pony logo"
+          />
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="accessories" data-sort="value">
+          <img
+            class="image-responsive"
+            src="./assets/images/merch/accessories/tote-bag.png"
+            alt="Black tote bag with Deftones logos"
+          />
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="topwear" data-sort="value">
+          <img
+            class="image-responsive"
+            src="./assets/images/merch/topwear/los-deftones-shirt.png"
+            alt="Long sleeve black Deftones shirt"
+          />
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="headwear" data-sort="value">
+          <img
+            class="image-responsive"
+            src="./assets/images/merch/headwear/white-pony-hat.png"
+            alt="Black Deftones hat with white White Pony logo"
+          />
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="accessories" data-sort="value">
+          <img
+            class="image-responsive"
+            src="./assets/images/merch/accessories/military-bag.png"
+            alt="Green duffle back with Deftones stencil"
+          />
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3 filtr-item --sold-out" data-category="topwear" data-sort="value">
+          <img
+            class="image-responsive"
+            src="./assets/images/merch/topwear/deftones-skull-shirt.png"
+            alt="White Deftones shirt with black skull and band name"
+          />
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="./assets/javascripts/jquery-3.3.1.min.js"></script>
+<script src="./assets/javascripts/jquery.filterizr.min.js"></script>
+<script src="./assets/javascripts/lodash.js"></script>
+<script src="./assets/javascripts/mobile-menu.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.filtr-container').filterizr({});
+    $('.merch-ctrl-btn').click(function(){
+      if($(this).hasClass('active')){
+        return false;
+      } else {
+        $('.merch-ctrl-btn').removeClass('active');
+        $(this).addClass('active');
+      }
+    })
+  });
+</script>
+
+</html>
